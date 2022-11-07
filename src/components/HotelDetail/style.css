@@ -1,0 +1,11 @@
+.container__hotel-detail {
+  width: 500px;
+  padding: 10px 10px 10em 10px;
+}
+
+.wrapper__hotel-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 100px; 
+}

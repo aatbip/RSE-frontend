@@ -1,0 +1,44 @@
+.container__hotel-manage {
+  width: 100%;
+  padding: 3em 1em 10em 1em; 
+}
+
+.wrapper__hotel-manage {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.add-new-hotel form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.add-new-hotel input,
+.add-new-hotel textarea {
+  padding: 20px 50px;
+}
+
+.add-new-hotel textarea {
+  height: 200px;
+  width: inherit;
+  resize: vertical;
+}
+
+#button-hotel-manage {
+  color: white;
+  background-color: #4a4c4c;
+  font-size: 20px;
+}
+
+#button-hotel-manage:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.user-hotel-section {
+  text-align: center;
+}

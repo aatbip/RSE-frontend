@@ -1,0 +1,37 @@
+.container__location-recommend {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.wrapper__location-recommend {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid #4a4c4c;
+  padding: 10px 5px;
+}
+
+.wrapper__location-recommend h3 {
+  border-bottom: 2px solid #4a4c4c;
+  width: 300px;
+}
+
+.content__location-recommend {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.content-wrapper__location-recommend {
+  display: flex;
+  gap: 5px;
+}
+
+.content-wrapper__location-recommend:hover {
+  cursor: pointer;
+}
+
+.content-wrapper__location-recommend img {
+  width: 150px;
+  height: 80px;
+}

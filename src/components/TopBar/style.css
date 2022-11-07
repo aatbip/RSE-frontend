@@ -1,0 +1,14 @@
+.top-bar-h3:hover {
+  cursor: pointer;
+  background-color: #4a4c4c;
+  color: #fff;
+}
+
+.top-bar-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-bar-h3 {
+  padding: 10px 30px;
+}
