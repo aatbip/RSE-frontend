@@ -6,3 +6,16 @@
   box-sizing: border-box;
   font-family: "Xanh Mono", monospace;
 }
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -11,19 +11,6 @@
   max-width: 350px;
 }
 
-.container__hotel-card::-webkit-scrollbar {
-  width: 3px;
-}
-
-/* Handle */
-.container__hotel-card::-webkit-scrollbar-thumb {
-  background: #4a4a4a;
-}
-
-/* Handle on hover */
-.container__hotel-card::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 .container__hotel-card:hover {
   cursor: pointer;

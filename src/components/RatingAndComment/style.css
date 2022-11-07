@@ -1,0 +1,40 @@
+.rating-container {
+  padding-bottom: 5em;
+}
+
+.rating-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rating-wrapper textarea {
+  width: 300px;
+  padding: 10px 5px;
+  resize: vertical;
+}
+
+.rating-wrapper button {
+  background-color: #2a2a2c;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.rating-wrapper button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.review-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.review-wrapper-box {
+  border: 2px solid #2a2a2c;
+  border-radius: 5px;
+}

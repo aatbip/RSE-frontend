@@ -3,12 +3,14 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { useSelector } from "react-redux";
 
 import "./style.css";
+import RatingComment from "../RatingAndComment/RatingComment";
 
 const HotelDetail = () => {
   const { id } = useParams();
-  console.log(id);
+  const { loggedIn } = useSelector((store) => store.user);
 
   const [hotel, setHotel] = React.useState({});
   const [isLoading, setIsLoading] = React.useState(true);
@@ -34,14 +36,15 @@ const HotelDetail = () => {
       style={{
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
+        flexWrap: "wrap",
       }}
     >
       <div className="container__hotel-detail">
         <div className="wrapper__hotel-detail">
-          {!isLoading ? (
-            <>
-              <div>
+          <>
+            <div>
+              {!isLoading ? (
                 <Carousel>
                   {hotel.images.map((image) => {
                     return (
@@ -53,22 +56,25 @@ const HotelDetail = () => {
                     );
                   })}
                 </Carousel>
-                <h1>{hotel.name}</h1>
-                <h3>{hotel.location}</h3>
-                <h4>{hotel.price}</h4>
-                <p>{hotel.description}</p>
-              </div>
-            </>
-          ) : (
-            <></>
-          )}
+              ) : (
+                <></>
+              )}
+              <h1>{hotel.name}</h1>
+              <h3>{hotel.location}</h3>
+              <h4>{hotel.price}</h4>
+              <p>{hotel.description}</p>
+            </div>
+          </>
         </div>
       </div>
-
-      <div>
-        <h1>ADD YOUR RATING</h1>
-        
-      </div>
+      {loggedIn ? (
+        <div className="rating-review-section">
+          <h1>ADD YOUR RATING</h1>
+          <RatingComment key={id} id={id} />
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
